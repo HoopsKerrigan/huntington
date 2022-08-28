@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Newsletter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left, .right {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+
+<body style="background-color:#f9b95d;">
+
+<center>
+<h1>Township of Huntington, West Virginia</h1>
+<h2>Official Town Website</h2>
+</center>
+
+<div class="row">
+  <div class="column left" style="background-color:#fbcb85;">
+    <center><h2><u>Hot Links</u></h2></center>
+    <ul>
+	<li><a href="https://cityofhuntingtonwv.com">Main Page</a></li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/history.html">Our History</a></li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/events.html">Upcoming Events</a></li>
+	<br>
+	<li>Newsletter</li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/gourdchat.html">GourdChat™ v1.03</a></li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/huntingtonmap.html">Town Map</a></li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/about.html">About</a></li>
+    </ul>
+    <hr>
+    <center><h2><u>Seven-Day Forecast</u></h2></center>
+    <dl>
+	<dt>Sunday Aug 27</li>
+		<dd>🌤 - <b>89°</b>/69°, 0.00" precip.
+	<br>
+	<dt>Monday Aug 28</li>
+		<dd>🌤 - <b>89°</b>/67°, 0.00" precip.
+	<br>
+	<dt>Tuesday Aug 29</li>
+		<dd>🌤 - <b>89°</b>/65°, 0.00" precip.
+	<br>
+	<dt>Wednesday Aug 30</li>
+		<dd>☀ - <b>92°</b>/70°, 0.00" precip.	
+	<br>
+	<dt>Thursday Aug 31</li>
+		<dd>☀ - <b>95°</b>/66°, 0.00" precip.
+	<br>
+	<dt>Friday Sept 1</li>
+		<dd>🌤 - <b>84°</b>/62°, 0.00" precip.	
+	<br>
+	<dt>Saturday Sept 2</li>
+		<dd>☀ - <b>79°</b>/55°, 0.00" precip.
+    </dl>
+  </div>
+
+
+  <div class="column middle" style="background-color:#ffd79d;"> 
+	<center><h2>Newsletter</h2></center>
+	<p>For those of you who can't get enough of the Huntington Website, enter your electronic-mail information to enroll in a one-page weekly newsletter with other happenings around the Greater Huntington Area. Enrollment is free and processing your account should take no more than 24 business hours. In addition to reminders of local events and smaller news stories, the Huntington Newsletter is printable and includes advertisements, coupons, and interactive games. </p>
+
+	<h3>Huntington Newsletter Sign-Up</h3>
+	<form action="/action_page.php">
+	<label for="name">Enter your name:</label>
+	<input type="name" id="name" name="name">
+	<input type="submit">
+	</form>
+	<form action="/action_page.php">
+  	<label for="email">Enter your e-mail:</label>
+  	<input type="email" id="email" name="email">
+  	<input type="submit">
+	</form>
+  </div>
+
+  <div class="column right" style="background-color:#fbcb85;">
+	  <head>
+	  <meta charset="UTF-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" href="login-page.css">
+	  <script defer src="login-page.js"></script>
+	</head>
+
+  <main id="main-holder">
+    <h3 id="login-header">Municipal Login</h3>
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+    
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+    <br>
+  </main>
+  </div>
+</div>
+<center><h6>©1995</h6></center>
+</body>
+</html>
