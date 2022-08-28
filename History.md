@@ -1,6 +1,6 @@
 layout: page
 title: "History"
-permalink: cityofhuntington.com/history/
+permalink: cityofhuntingtonwv.com/history/
 
 <!DOCTYPE html>
 <html>
