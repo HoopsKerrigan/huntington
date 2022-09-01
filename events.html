@@ -25,10 +25,11 @@
 /* Clear floats after the columns */
 .row:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 </style>
+
 </head>
 <body style="background-color:#f9b95d;">
 
@@ -47,13 +48,13 @@
 	<br>
 	<li>Upcoming Events</li>
 	<br>
-        <li><a href="https://cityofhuntingtonwv.com/newsletter.html">Newsletter</a></li>
+	<li><a href="https://cityofhuntingtonwv.com/newsletter.html">Newsletter</a></li>
 	<br>
 	<li><a href="https://cityofhuntingtonwv.com/gourdchat.html">GourdChat™ v1.03</a></li>
-	<br> 
-	<li><a href="https://cityofhuntingtonwv.com/huntingtonmap.html">Town Maps</a></li>
 	<br>
-        <li><a href="https://cityofhuntingtonwv.com/about.html">About</a></li>
+	<li><a href="https://cityofhuntingtonwv.com/huntingtonmap.html">Town Map</a></li>
+	<br>
+	<li><a href="https://cityofhuntingtonwv.com/about.html">About</a></li>
     </ul>
     <hr>
     <center><h2><u>Seven-Day Forecast</u></h2></center>
@@ -202,7 +203,7 @@
   </div>
 
   <div class="column right" style="background-color:#fbcb85;">
-    <main id="main-holder">
+   <main id="main-holder">
     <h3 id="login-header"><u>Munincipal Login</u></h3>
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
@@ -215,7 +216,7 @@
     </div>  
   </main>
 
-  <style type="text/css">
+	<style type="text/css">
 	html {
 	  height: 100%;
 	}
@@ -223,7 +224,6 @@
 	body {
   	   height: 100%;
 	   margin: 0;
-	   display: grid;
 	   justify-items: center;
 	   align-items: center;
 	   background-color: #3a3a3a;
@@ -293,8 +293,9 @@
 	  background-color: #e58f8f;
 	  opacity: 0;
 	}
-   </style>
-<script defer src="login-page.js"></script>
+	</style>
+	<script defer src="login-page.js"></script>
+
   </div>
 </div>
 <center><h6>©1995</h6></center>
