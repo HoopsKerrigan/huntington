@@ -86,22 +86,20 @@
   <div class="column middle" style="background-color:#ffd79d;"> 
 	<center><h2>Newsletter</h2></center>
 	<p>For those of you who can't get enough of the Huntington Website, enter your electronic-mail information to enroll in a one-page weekly newsletter with other happenings around the Greater Huntington Area. Enrollment is free and processing your account should take no more than 24 business hours. In addition to reminders of local events and smaller news stories, the Huntington Newsletter is printable and includes advertisements, coupons, and interactive games. </p>
+<br>
 
-	<h3>Huntington Newsletter Sign-Up</h3>
-	<form action="/action_page.php">
-	<label for="name">Enter your name:</label>
-	<input type="fname" id="name" name="name">
-	<input type="submit">
-	</form>
-	<form action="/action_page.php">
-  	<label for="email">Enter your e-mail:</label>
-  	<input type="email" id="email" name="email">
-  	<input type="submit">
-	</form>
-  </div>
+<form action="mail.php" method="POST">
+<p>Name</p> <input type="text" name="name">
+<p>Email</p> <input type="text" name="email">
+<p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+<input type="submit" value="Send"><input type="reset" value="Clear">
+</form>
+
+
+	</div>
 
   <div class="column right" style="background-color:#fbcb85;">
-  <main id="main-holder">
+	  <main id="main-holder">
     <h3 id="login-header"><u>Munincipal Login</u></h3>
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
@@ -113,6 +111,13 @@
       <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
     </div>  
   </main>
+
+	<br>
+	<hr>
+	<h3><u><center>Gourd Fact of the Day</center></u></h3>
+	<h5>Gourds are members of the Cucurbit family, which includes cucumbers, squash, and melons.</h5>
+	<hr>
+
 
   <style type="text/css">
 	html {
