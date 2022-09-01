@@ -94,26 +94,99 @@
   </div>
 
   <div class="column right" style="background-color:#fbcb85;">
-    <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="login-page.css">
-  <script defer src="login-page.js"></script>
-</head>
-
   <main id="main-holder">
-    <h3 id="login-header">Municipal Login</h3>
-    <div id="login-error-msg-holder">
-      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-    </div>
-    
+    <h3 id="login-header"><u>Munincipal Login</u></h3>
     <form id="login-form">
       <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
       <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
       <input type="submit" value="Login" id="login-form-submit">
     </form>
-    <br>
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>  
   </main>
+
+  <style type="text/css">
+	html {
+	  height: 100%;
+	}
+
+	body {
+  	   height: 100%;
+	   margin: 0;
+	   display: grid;
+	   justify-items: center;
+	   align-items: center;
+	   background-color: #3a3a3a;
+	}
+
+	#main-holder {
+	  width: 100%;
+	  height: 70%;
+	  display: grid;
+	  border: 1px solid;
+	  justify-items: center;
+	  align-items: center;
+	  background-color: #fee4be;
+	}
+
+	#login-error-msg-holder {
+	  width: 100%;
+	  height: 100%;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+
+	#error-msg-second-line {
+	  display: block;
+	}
+
+	#login-form {
+	  align-self: flex-start;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+
+	.login-form-field::placeholder {
+	  color: #3a3a3a;
+	}
+
+	.login-form-field {
+	  border: 1px solid;
+	  margin-bottom: 10px;
+	  border-radius: 3px;
+	  outline: none;
+	  padding: 0px 0px 5px 5px;
+	}
+
+	#login-form-submit {
+	  width: 100%;
+	  padding: 7px;
+	  border: none;
+	  color: white;
+	  font-weight: bold;
+	  background-color: #3a3a3a;
+	  cursor: pointer;
+	  outline: none;
+	}
+
+	#login-error-msg {
+	  width: 100%;
+	  text-align: center;
+	  margin: 10;
+	  padding: 5px;
+	  font-size: 12px;
+	  font-weight: bold;
+	  color: #8a0000;
+	  border: 1px solid #8a0000;
+	  background-color: #e58f8f;
+	  opacity: 0;
+	}
+   </style>
+<script defer src="login-page.js"></script>
   </div>
 </div>
 <center><h6>©1995</h6></center>
