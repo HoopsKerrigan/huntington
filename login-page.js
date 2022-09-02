@@ -9,7 +9,6 @@ loginButton.addEventListener("click", (e) => {
 
     if (username === "XXXXXXXXXXX" && password === "XXXXXXXXX") {
         alert("You have successfully logged in.");
-        window.location.replace("https://cityofhuntingtonwv.com/HPDPortal.html");
     } else {
         loginErrorMsg.style.opacity = 1;
     }
