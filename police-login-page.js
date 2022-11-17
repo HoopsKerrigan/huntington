@@ -7,10 +7,10 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
 
     if (username === "95-006129") {
-        alert("You have successfully logged in.");
+        alert("Accessing...");
 	window.location.assign("https://cityofhuntingtonwv.com/HPDCase95006129.html");
     } else if (username === "95-006145") {
-        alert("You have successfully logged in.");
+        alert("Accessing...");
 	window.location.replace("https://cityofhuntingtonwv.com/HPDCase95006145.html");
     } else {
         loginErrorMsg.style.opacity = 1;
