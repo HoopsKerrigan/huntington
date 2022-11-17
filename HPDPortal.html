@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Huntington Area Maps</title>
+<title>Huntington Police Department</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 * {
@@ -29,6 +29,7 @@
   clear: both;
 }
 </style>
+
 </head>
 
 <body style="background-color:#1f85cc;">
@@ -58,38 +59,138 @@
     </ul>
     <hr>
     <center><h2><u>Seven-Day Forecast</u></h2></center>
-<dl>
-	<dt>Sunday Nov 5</li>
-		<dd>☀ - <b>39°</b>/27°, 0.00" precip.
+    <dl>
+	<dt>Sunday Aug 27</li>
+		<dd>🌤 - <b>89°</b>/69°, 0.00" precip.
 	<br>
-	<dt>Monday Nov 6</li>
-		<dd>🌤 - <b>51°</b>/23°, 0.00" precip.
+	<dt>Monday Aug 28</li>
+		<dd>🌤 - <b>89°</b>/67°, 0.00" precip.
 	<br>
-	<dt>Tuesday Nov 7</li>
-		<dd>🌧 - <b>53°</b>/45°, 0.29" precip.
+	<dt>Tuesday Aug 29</li>
+		<dd>🌤 - <b>89°</b>/65°, 0.00" precip.
 	<br>
-	<dt>Wednesday Nov 8</li>
-		<dd>☀ - <b>45°</b>/28°, 0.00" precip.	
+	<dt>Wednesday Aug 30</li>
+		<dd>☀ - <b>92°</b>/70°, 0.00" precip.	
 	<br>
-	<dt>Thursday Nov 9</li>
-		<dd>☀ - <b>43°</b>/19°, 0.00" precip.
+	<dt>Thursday Aug 31</li>
+		<dd>☀ - <b>95°</b>/66°, 0.00" precip.
 	<br>
-	<dt>Friday Nov 10</li>
-		<dd>☁ - <b>71°</b>/34°, 0.00" precip.	
+	<dt>Friday Sept 1</li>
+		<dd>🌤 - <b>84°</b>/62°, 0.00" precip.	
 	<br>
-	<dt>Saturday Nov 11</li>
-		<dd>🌧 - <b>63°</b>/29°, 0.45" precip.
+	<dt>Saturday Sept 2</li>
+		<dd>☀ - <b>79°</b>/55°, 0.00" precip.
     </dl>
   </div>
 
 
-  <div class="column middle" style="background-color:#1f85cc;"> 
-	<center><h2>Huntington Police Department Portal</h2></center>
+  <div class="column middle" style="background-color:#8fd4e2;"> 
+  <center><h2>Huntington Police Department Portal</h2></center></h4>
+  <center><h4>This is an OFFICIAL GOVERNMENT WEBSITE containing sensitive documents.</center>
+  <h4>By accessing, you agree to not copy or distribute any information presented on this website unless given express written permission by your supervisor. Website curators may request written permission of access within ten (10) days of sensitive material viewing.</h4>
+
+  <center><main id="main-holder">
+    <h3 id="login-header"><u>Enter Case ID</u></h3>
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Case ID">
+      <input type="submit" value="Lookup" id="login-form-submit">
+    </form>
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid Case ID<span id="error-msg-second-line"></span></p>
+
+<script defer src="police-login-page.js"></script>
+	    
+  </div> 
+	</center> 
+  </main>
+
+  <style type="text/css">
+	html {
+	  height: 100%;
+	}
+
+	body {
+  	   height: 100%;
+	   margin: 0;
+	   display: grid;
+	   justify-items: center;
+	   align-items: center;
+	   background-color: #3a3a3a;
+	}
+
+	#main-holder {
+	  width: 30%;
+	  height: 70%;
+	  display: grid;
+	  border: 1px solid;
+	  justify-items: center;
+	  align-items: center;
+	  background-color: #fee4be;
+	}
+
+	#login-error-msg-holder {
+	  width: 20%;
+	  height: 100%;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+
+	#error-msg-second-line {
+	  display: block;
+	}
+
+	#login-form {
+	  align-self: flex-start;
+	  display: grid;
+	  justify-items: center;
+	  align-items: center;
+	}
+
+	.login-form-field::placeholder {
+	  color: #3a3a3a;
+	}
+
+	.login-form-field {
+	  border: 1px solid;
+	  margin-bottom: 10px;
+	  border-radius: 3px;
+	  outline: none;
+	  padding: 0px 0px 5px 5px;
+	}
+
+	#login-form-submit {
+	  width: 100%;
+	  padding: 7px;
+	  border: none;
+	  color: white;
+	  font-weight: bold;
+	  background-color: #3a3a3a;
+	  cursor: pointer;
+	  outline: none;
+	}
+
+	#login-error-msg {
+	  width: 100%;
+	  text-align: center;
+	  margin: 10;
+	  padding: 5px;
+	  font-size: 12px;
+	  font-weight: bold;
+	  color: #8a0000;
+	  border: 1px solid #8a0000;
+	  background-color: #e58f8f;
+	  opacity: 0;
+	}
+   </style>
+
+
   </div>
 
   <div class="column right" style="background-color:#1f85cc;">
-	<center><img src="https://i.imgur.com/iRHTe0i.png" width="230" height="240"></center>
-  </div>
+	<center><img src="https://i.imgur.com/iRHTe0i.png" width="270" height="290"></center>
+</div>
 </div>
 <center><h6>©1995</h6></center>
 </body>
